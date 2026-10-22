@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07080B"/>
+      <stop offset="50%" stop-color="#11131A"/>
+      <stop offset="100%" stop-color="#060709"/>
+    </linearGradient>
+    <radialGradient id="redGlow" cx="50%" cy="46%" r="48%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.34"/>
+      <stop offset="55%" stop-color="#991B1B" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floorReflect" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#07080B" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="carBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="38%" stop-color="#1E232D"/>
+      <stop offset="78%" stop-color="#0F1218"/>
+      <stop offset="100%" stop-color="#07080B"/>
+    </linearGradient>
+    <linearGradient id="redRim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#EF4444" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Showroom Backdrop -->
+  <rect width="1000" height="560" fill="url(#bg)"/>
+  <ellipse cx="500" cy="260" rx="460" ry="220" fill="url(#redGlow)"/>
+
+  <!-- Ceiling Red Neon Light Bars -->
+  <line x1="140" y1="48" x2="860" y2="48" stroke="#EF4444" stroke-opacity="0.45" stroke-width="2"/>
+  <line x1="220" y1="54" x2="780" y2="54" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Showroom Glossy Floor & Red Reflection -->
+  <line x1="60" y1="385" x2="940" y2="385" stroke="url(#redRim)" stroke-width="2"/>
+  <ellipse cx="500" cy="415" rx="390" ry="48" fill="url(#floorReflect)"/>
+  <ellipse cx="500" cy="372" rx="370" ry="20" fill="#020305" opacity="0.95"/>
+
+  <!-- Vehicle Body -->
+  <path d="M170,342 L198,266 C228,252 290,244 350,240 L438,186 C495,178 618,180 685,196 L760,260 C795,272 818,292 822,342 C822,356 805,362 775,362 L210,362 C185,362 170,354 170,342 Z" fill="url(#carBody)" stroke="#64748B" stroke-width="1.5"/>
+  <path d="M335,242 L438,182 C498,174 622,176 690,194 L768,260" fill="none" stroke="url(#redRim)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M362,238 L444,194 C495,188 602,190 662,202 L720,250 Z" fill="#0B0E14" stroke="#94A3B8" stroke-width="1"/>
+  <line x1="210" y1="295" x2="775" y2="288" stroke="url(#redRim)" stroke-width="1.8" opacity="0.8"/>
+
+  <!-- Model Specific LED Signature -->
+  <polyline points="176,282 212,280 202,294" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+  <path d="M808,268 L846,275 L842,292 L804,288 Z" fill="#EF4444"/>
+
+  <!-- Front Wheel -->
+  <g transform="translate(285, 354)">
+    <circle r="53" fill="#08090C" stroke="#262933" stroke-width="8"/>
+    <circle r="39" fill="#141720" stroke="#EF4444" stroke-width="2"/>
+    <circle r="31" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="9 6"/>
+    <circle r="11" fill="#DC2626"/>
+  </g>
+
+  <!-- Rear Wheel -->
+  <g transform="translate(715, 354)">
+    <circle r="53" fill="#08090C" stroke="#262933" stroke-width="8"/>
+    <circle r="39" fill="#141720" stroke="#EF4444" stroke-width="2"/>
+    <circle r="31" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="9 6"/>
+    <circle r="11" fill="#DC2626"/>
+  </g>
+
+  <!-- Illustrative Notice Badge -->
+  <rect x="610" y="72" width="340" height="28" rx="6" fill="#12141C" stroke="#DC2626" stroke-opacity="0.5"/>
+  <text x="780" y="90" fill="#CBD5E1" font-family="monospace" font-size="10.5" text-anchor="middle">VISUEL ILLUSTRATIF PROVISOIRE • REMPLAÇABLE</text>
+
+  <!-- Bottom Showroom Nameplate -->
+  <text x="54" y="468" fill="#EF4444" font-family="sans-serif" font-size="12" font-weight="700" letter-spacing="2.5">OPEL • 2 VÉHICULES AU PARC (COR-01, COR-02)</text>
+  <text x="54" y="505" fill="#FFFFFF" font-family="sans-serif" font-size="32" font-weight="800" font-style="italic">Opel Corsa</text>
+  <text x="54" y="532" fill="#94A3B8" font-family="sans-serif" font-size="12" letter-spacing="1">Citadine Allemande • Showroom Kénitra • ABBOUD CAR RENTAL</text>
+</svg>

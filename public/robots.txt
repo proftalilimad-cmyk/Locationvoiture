@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Allow: /vehicules
+Allow: /reservation
+Allow: /agence
+Allow: /faq
+Allow: /contact
+Allow: /mentions-legales
+Disallow: /admin
+Disallow: /api/
+
+Sitemap: /sitemap.xml

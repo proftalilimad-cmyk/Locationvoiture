@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <!-- Page d'accueil : Location de voitures à Kénitra & Rabat -->
+  <url>
+    <loc>https://abboudlocation.ma/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://abboudlocation.ma/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abboudlocation.ma/?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abboudlocation.ma/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abboudlocation.ma/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Catalogue de véhicules à Kénitra & Rabat -->
+  <url>
+    <loc>https://abboudlocation.ma/vehicules</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://abboudlocation.ma/vehicules" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abboudlocation.ma/vehicules?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abboudlocation.ma/vehicules?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abboudlocation.ma/vehicules" />
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Formulaire de demande de réservation -->
+  <url>
+    <loc>https://abboudlocation.ma/reservation</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://abboudlocation.ma/reservation" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abboudlocation.ma/reservation?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abboudlocation.ma/reservation?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abboudlocation.ma/reservation" />
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Présentation de l'agence (Kénitra & axe Rabat-Salé-Kénitra) -->
+  <url>
+    <loc>https://abboudlocation.ma/agence</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://abboudlocation.ma/agence" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abboudlocation.ma/agence?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abboudlocation.ma/agence?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abboudlocation.ma/agence" />
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- FAQ Location de voitures Kénitra & Rabat -->
+  <url>
+    <loc>https://abboudlocation.ma/faq</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://abboudlocation.ma/faq" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abboudlocation.ma/faq?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abboudlocation.ma/faq?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abboudlocation.ma/faq" />
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Contact & Carte Kénitra -->
+  <url>
+    <loc>https://abboudlocation.ma/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://abboudlocation.ma/contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abboudlocation.ma/contact?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abboudlocation.ma/contact?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abboudlocation.ma/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Mentions légales -->
+  <url>
+    <loc>https://abboudlocation.ma/mentions-legales</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://abboudlocation.ma/mentions-legales" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://abboudlocation.ma/mentions-legales?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://abboudlocation.ma/mentions-legales?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://abboudlocation.ma/mentions-legales" />
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
+  </url>
+</urlset>

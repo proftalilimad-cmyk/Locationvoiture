@@ -1,0 +1,38 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Bloquer tout accès public direct au dossier de données privées JSON
+  RewriteRule ^api/abboud/data/ - [F,L]
+
+  # 2. Router les appels API /api/abboud/* vers le contrôleur PHP Hostinger
+  RewriteCond %{REQUEST_URI} ^/api/abboud/(.*)$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^api/abboud/(.*)$ api/abboud/index.php?route=$1 [QSA,L]
+
+  # 3. Servir directement les fichiers et dossiers existants (images, CSS, JS, sitemap.xml, robots.txt)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # 4. Rediriger toutes les routes React (/vehicules, /reservation, /admin, etc.) vers index.html (SPA)
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Compression GZIP pour accélérer le temps de chargement (Core Web Vitals)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Cache navigateur longue durée pour les images véhicules et bundles CSS/JS
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# Sécurité : empêcher le listage des répertoires
+Options -Indexes
